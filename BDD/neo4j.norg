@@ -1,0 +1,83 @@
+@document.meta
+title: neo4j
+description: 
+authors: kenan
+categories: bdd
+created: 2023-12-12T14:41:03+0000
+updated: 2023-12-12T14:41:03+0000
+version: 1.1.1
+@end
+
+* Neo4j
+  - {https://neo4j.com/docs/java-reference/current/java-embedded/}[DOC]
+
+** BDD
+   @code java
+    private String USERNAME = "neo4j";
+    private String PASSWORD = "control-piano-formal-harbor-august-6674";
+    private String URI = "bolt://127.0.0.1:7687";
+    private Driver driver;
+    private Session session;
+
+    public DemoNeo4j() {
+    try {
+      // Connect to the Neo4j database
+      this.driver = GraphDatabase.driver(URI, AuthTokens.basic(USERNAME, PASSWORD));
+      // Create a session
+      this.session = driver.session();
+      System.out.println("Connected to Neo4j");
+    } catch (Exception e) {
+      System.out.println("Error: " + e.getMessage());
+    }
+  }
+   @end
+
+** Créer
+   @code java
+   try (Session session = driver.session()) {
+    var user = session.executeWrite(tx -> {
+    String statement = """
+      CREATE (u:User {
+        userId: randomUuid(),
+        email: $email,
+        password: $encrypted,
+        name: $name
+      })
+    RETURN u { .userId, .name, .email } as u
+    """;
+    var res = tx.run(statement, Values.parameters("email", email, "encrypted", encrypted, "name", name));
+    }
+   @end
+** Lire
+   @code java
+   try (var session = driver.session()) {
+     var movies = session.executeRead(tx -> {
+       Params.Sort sort = params.sort(Params.Sort.title);
+       String query = String.format("""
+         MATCH (m:Movie)
+         WHERE m.`%s` IS NOT NULL
+         RETURN m {
+         .*
+         } AS movie
+         ORDER BY m.`%s` %s
+         SKIP $skip
+         LIMIT $limit
+         """, sort, sort, params.order());
+       var res = tx.run(query, Values.parameters("skip", params.skip(), "limit", params.limit()));
+       return res.list(r -> r.get("movie").asMap());
+     });
+   @end
+  ** Utile
+    - créer une méthode toString/toNode:
+
+     @code java
+     public String toNoeud() {
+       return ":Prof{nom:'" + nom + "',prenom:'" + prenom + "',filiere:'" + filiere + "'}";
+     }
+     public Prof fromNode(Node noeud) {
+       this.nom = noeud.get("nom").asString();
+       this.prenom = noeud.get("prenom").asString();
+       this.filiere = noeud.get("filiere").asString();
+       return this;
+     }
+     @end

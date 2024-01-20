@@ -1,0 +1,73 @@
+@document.meta
+title: Observer
+description: 
+authors: kenan
+categories: Java
+created: 2023-11-22T13:52:15+0000
+updated: 2023-11-22T14:29:51+0000
+version: 1.1.1
+@end
+
+* Quand?
+  - Lorsque l'on modifie une classe et que l'on souhaite une notification.
+  -- (eg. display in console log)
+
+* Comment?
+** Solution 0 //Ne pas utiliser//:
+   - Mettre les print dans l'appli après la modification
+
+** Solution 1:
+   - Mettre la notification dans la classe ou le changement se fait
+   - *Problème 1:* La notification n'a potentiellement rien a voir avec la classe en question
+   - *Problème 2:* Si d'autres traitement sont nécessaires, on doit modifier la classe.
+
+** Solution 2 Observer //Ne plus utiliser car déprecier//:
+   - La classe à notifier doit extend Observer
+   - Puis lorsque l'on veut une notification on utilise: setChanged(); notifyObservers();
+   - Créer une Classe notif qui implemente Observer
+   - Ecrire le log dans la méthode update
+   - Puis on abonne notre classe à la notif avec addObserver()
+   - *Problème*: On doit extend notre classe à notifier, donc bloque d'autres héritages.
+** Solution 2.5 Observer wrapped:
+   - Créer un attribut Observable dans notre classe
+   - Puis une méthode addObserver qui s'occupe du addObserver dans la classe.
+
+** Solution 4 //Bon design Pattern//
+   - Créer un attribut PropertyChangeSupport dans notre classe
+   - Créer une méthode addListener()
+
+* Exemple (Solution 4: PropretyChangeListener)
+  
+  @code java
+  public class AfficherDansLog implements PropertyChangeListener {
+    @Override
+    public void propertyChange(PropertyChangeEvent evt) {
+      System.out.println(evt.getPropertyName() + " a changé de Département de " + evt.getOldValue() + " à " + evt.getNewValue());
+    }
+  }
+
+  // Dans une classe consultant:
+  // Créer un attribut PropertyChangeSupport
+  private PropertyChangeSupport pcs = new PropertyChangeSupport(this);
+  
+  // Pour surveiller toute une classe (attribut static)
+  private static PropertyChangeSupport staticPcs = new PropertyChangeSupport(Consultant.class);
+
+  // Créer une méthode addListener
+  public void addListener(PropertyChangeListener listener) {
+    pcs.addPropertyChangeListener(listener);
+  }
+  // Puis lorsque l'on veut notifier ajouter un firePropertyChange:
+  public void setDept(String dept) {
+    pcs.firePropertyChange(nom, this.dept, dept);
+    this.dept = dept;
+  }
+
+  // Enfin pour afficher la notification il faut add le listener
+  dufour.addListener(new AfficherDansLog());
+
+  // Désormais lorsque:
+  dufour.setDept("Marketing");
+  // = DUFOUR a changé de Département de Comptabilité à Marketing
+  // La notification ne se fait que lorsque la valeur a changée
+  @end 

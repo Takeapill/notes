@@ -1,0 +1,20 @@
+@document.meta
+title: Montage
+description: Méthodologie de montage
+authors: kenan
+categories: ccna
+created: 2023-11-17
+updated: 2023-11-17T14:23:23+0000
+version: 1.1.1
+@end
+
+* Plan de montage générique => Tests
+  /Faire l'inventaire/
+  ~ *Plan du réseau* => 4 yeux
+  ~ *Câblage + hostname + noshut (interfaces)* => show cdp neigbors 
+  ~ *Configuration de base* => Essayer de se connecter aux devices
+  ~ *Mettre les adresses* => Ping les voisins (show interfaces brief pour s'aider)
+  ~ *Routage* => Ping tous les devices non-direct (show ip route pour s'aider)
+  ~ *Serveur web* => Ping 8.8.8.8 depuis n'importe ou
+  ~ *DHCP* => Les devices get la bonne addresse + Ping
+  ~ *WIFI* => Ping depuis un device connecté au wifi

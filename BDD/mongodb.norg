@@ -1,0 +1,50 @@
+@document.meta
+title: mongodb
+description: 
+authors: kenan
+categories: bdd
+created: 2023-12-12T12:51:24+0000
+updated: 2023-12-12T12:51:24+0000
+version: 1.1.1
+@end
+
+* mongodb
+  {https://www.mongodb.com/docs/drivers/java/sync/current/usage-examples/}[DOC]
+
+** BDD
+   @code java
+   private static final String DATABASE_NAME = "mongodb_tp";
+   private static final String CONNEXION_STRING = "mongodb://localhost:27017";
+   private static final String COMPETITIONS_COLLECTION_NAME = "competitions";
+   private static final String CLUBS_COLLECTION_NAME = "clubs";
+   private static final MongoClient MONGO_CLIENT = MongoClients.create(CONNEXION_STRING);
+   private static final MongoDatabase DB = MONGO_CLIENT.getDatabase(DATABASE_NAME);
+   private static final MongoCollection<Document> COMPETITIONS = DB.getCollection(COMPETITIONS_COLLECTION_NAME);
+   private static final MongoCollection<Document> CLUBS = DB.getCollection(CLUBS_COLLECTION_NAME);
+   @end
+  
+
+** Utile 
+   - créer une méthode to et from Document
+   @code java
+   public static Participant ParticipantFromDocument(Document document) {
+     Club club = Club.ClubFromDocument((Document) document.get("club"));
+     return new Participant(
+       document.getString("nom"),
+       document.getString("prenom"),
+       document.getString("sexe"),
+       document.getString("email"),
+       document.getString("ville"),
+       club
+     );
+   }
+   public Document toDocument() {
+     return new Document("nom", nom)
+     .append("prenom", prenom)
+     .append("sexe", sexe)
+     .append("email", email)
+     .append("ville", ville)
+     .append("club", club.toDocument());
+   }
+
+   @end

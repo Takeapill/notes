@@ -1,0 +1,36 @@
+@document.meta
+title: routage
+description: 
+authors: kenan
+categories: ccna
+created: 2023-11-24T16:00:55+0000
+updated: 2023-12-01T16:26:54+0000
+version: 1.1.1
+@end
+
+* INFO générale
+  passive-interface ==> _ne pas envoyer de message rip sur cette interface_
+  no auto-summary ==> _ne pas résumer les routes_
+  default-information originate ==> _envoyer la route par défaut_
+  redistribute ... ==> _permet de lier plusieurs protocoles de routage_
+  redistribute /dynamic/ ... ==> _utiliser ? pour les metric_
+
+* router rip
+  - version 2
+  - network [address]
+  - passive-interface [interface] 
+  - no auto-summary
+
+
+* router EIGRP [numero]
+  - network [address] [mask_inversé]
+  - no auto-summary
+  - passive-interface [interface]
+  - redistribute static/eigrp [numero] metric [metric] ==> _redistribution des routes statiques / lorsque eirgp personnel pour connecter aux autres_
+  - ip summary-address eigrp [numero] [address] [mask_inversé] ==> _résumé de route_
+
+
+* router ospf [area]
+  - router-id [address] ==> _pas une vraie addresse ip seulement le format  *(! sert à identifier le routeur !)*_
+  - network [address] [mask_inversé] area [area]
+  - area [area] range [address] [mask] ==> _résumé de route_

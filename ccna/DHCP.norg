@@ -1,0 +1,20 @@
+@document.meta
+title: DHCP
+description: commandes DHCP
+authors: kenan
+categories: ccna
+created: 2023-11-24T14:37:39+0000
+updated: 2023-11-24T14:40:48+0000
+version: 1.1.1
+@end
+
+* Sur le routeur DHCP
+~ ip dhcp excluded-address {router ip} - {first device ip}
+~ ip dhcp pool {pool name}
+~~ network {network address} {subnet mask}
+~~ default-router {router ip}
+~~ dns-server {dns ip}
+
+* Sur l'interface ou les devices veulent se co en dhcp
+~ ip helper-address {dhcp server ip}
+

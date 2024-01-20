@@ -1,0 +1,64 @@
+@document.meta
+title: NoSQL
+description: info sur les bases de données NoSql
+authors: kenan
+categories: bdd
+created: 2023-11-17
+updated: 2023-11-20T15:17:49+0000
+version: 1.1.1
+@end
+
+* NoSQL
+  ** Définition
+     NoSQL permet de stocker et de récupérer des données sans utiliser le langage SQL.
+     Ceci évite de devoir penser au format des tables et de se concentrer uniquement sur les données à traiter.
+     Les bases de données NoSQL sont souvent plus rapides que les bases de données SQL et peuvent gérer de grandes quantités de données.
+     Elles sont également plus flexibles et évolutives que les bases de données SQL.
+     Elles sont cependant moins adaptées aux données structurées, aux relations entre les données et aux requêtes complexes.
+     Elles sont souvent utilisées pour le stockage de données non structurées ou semi-structurées.
+
+
+* *Clé Valeur*
+On accède à une valeur en utilisant une clé, ce qui est comparable à un dictionnaire ou un HashMap en Java.
+Cependant, on perd la possibilité de faire des recherches selon des critères. Seule la clé permet l'accès.
+
+** Avantages
+   - *Simplicité* : n'importe quel type.
+   - *Rapidité* : accès direct et rapide à la valeur.
+   - *Évolutivité* : les données n'ont pas besoin d'être filtrées.
+   - *Portabilité* : facile à stocker.
+
+** Inconvénients
+   - *Limitation de recherche* : impossible de rechercher des valeurs selon des critères autres que la clé.
+   - *Manque de structure* : ne convient pas aux cas où une structure complexe est nécessaire pour les données.
+   - *Difficulté avec de grandes quantités de données* : peut devenir inefficace avec de grandes quantités de données.
+
+** Exemples
+*** Utilisation
+    - E-commerce - Panier d'achat
+    - Chat
+    - Profils d'utilisateur et préférences
+
+*** Bases de données
+    - Redis
+    - Memcached
+
+
+* *Document*
+  On accède à un aggrégat de valeurs en utilisant une clé, ce qui est comparable à un document JSON.
+  
+** Avantages
+   - Modèle de données simple et puissant, structuré (XML, JSON)
+   - Requêtes plus complètes
+   - Flexibilité des schémas
+   - Evolutif 
+
+ ** Desavantage
+    - Duplication des données
+    - cohérence difficile
+    - Modèle limité
+
+** Exemples
+*** Utilisation
+  *** Bases de données
+      - MongoDB

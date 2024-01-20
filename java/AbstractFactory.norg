@@ -1,0 +1,22 @@
+@document.meta
+title: Abstract Factory
+description: 
+authors: kenan
+categories: Java
+created: 2023-11-17T14:15:26+0000
+updated: 2023-11-17T14:15:48+0000
+version: 1.1.1
+@end
+
+* Abstract Factory
+  - {https://refactoring.guru/design-patterns/abstract-factory}[*Refactoring Guru*]
+  -- {https://refactoring.guru/images/patterns/diagrams/abstract-factory/structure-2x.png}[/Schema/]
+
+** Quand?
+   - Lorsque l'on veut créer des objets qui partagent des caractéristiques communes.
+   - Lorsqu'une seule Factory ne suffit pas.
+** Comment?
+   ~ Créer une classe abstraite Factory.
+   ~ Créer une classe Factory pour chaque famille d'objet.
+   ~ Créer une classe abstraite pour chaque famille d'objet.
+   ~ Créer une classe pour chaque objet.

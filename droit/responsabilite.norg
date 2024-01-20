@@ -1,0 +1,81 @@
+@document.meta
+title: responsabilite
+description: 
+authors: 
+categories: Droit
+created: 2023-12-16T16:11:23+0100
+updated: 2023-12-19T08:37:17+0100
+version: 1.1.1
+@end
+
+* Types de responsabilité
+  /tout forme de résponsabilité peu être justifiée par un motif valable/
+** Responsabilité Pénale
+   _*But:* Punir les auteurs d'infractions pénales_
+   - Tout ce qui touche aux lois
+   - Abouti en amendes ou prison
+
+** Resposablité Civile
+   _*But:* réaparation financière du préjudice_
+   - Tout ce qui touche à la responsabilité civile
+  
+ /concours de responsabilité ==> quelles responsabilitées sont engagées ? ( 1 ou 2)/
+
+*** Responsabilité *Contractuelle*
+    - Respecter les termes du contrats
+
+*** Responsabilité *Pour faute:*
+    - préjudice contraire au droit
+**** *Conditions cumulatives:*
+     - Acte illicite (acte contraire au droit)
+     - Préjudice (dommage moral ou matériel)
+     - Causalité (lien entre acte illicite et préjudice)
+     - Faute (nuisance ou manque de diligence)
+     --- Volonté de commetre la faute
+     --- Capacité de discernement
+**** Effets
+     - Action en justice (dommage et intérêts)
+
+*** Responsabilité *Sans faute*
+    - Mise en danger d'autrui par une conduite irresponsable
+    - Manque de dilligence == négligence pour acte "banal" ==> objective simple
+    - Activité à risque malgré diligence ==> objective aggravée
+
+** Dans quels cas la RC professionnelle peut-elle servir dans le domaine informatique ? 
+   - Retards accidentels dans la prestation ==> OUI 
+   - Défaut de performance ==> NON
+   - Perte et destruction de données ==> OUI (si le travail est bien effectué)
+
+** Responsabilité de l'employeur (domaine informatique)
+   *But*: l'employeur est-il responsable des actions de ses employés?
+   /Presque impossible de prouver le contraire ==> Donc toujours fautif
+   Cependant utile pour les assurances si conditions remplies
+   L'employeur peut ensuite chercher le fautif et infliger une peine administrative/
+
+*** Conditions
+    - Employeur et Auxiliaire
+    - Acte illicite de l’auxiliaire dans l’accomplissement de son travail
+    - Préjudice
+    - Lien de causalité
+    - Absences de preuves libératoires
+*** Justifications valables
+    - le choix de l’auxiliaire
+    - les instructions données à l’auxiliaire
+    - la surveillance de l’auxiliaire
+    - l’organisation rationnelle de l’entreprise
+
+* Responsabilité des robots
+** Qui est juridiquement responsable des actions des robots?
+   - _*Responsabilité du concepteur ?*_ ==> Non, ça freine l'innovation
+   - _*Responsabilité sans faute du propriétaire ?*_ ==> → quand on sait pas vers qui se rabatre
+     _*/On choisit celle qui est la plus vrai semblable mais la contractuelle est la + facile à attaquer/*_
+
+** Et si ça ne fourni pas le service attendu?
+   - _*Règles contractuelles*_
+   -- Contrat de vente
+   -- Contrat d'Entreprise
+   - _*Loi fédérale sur la responsabilité du fait des produits (défaut dans le produit)*_
+   -- Règles spécifiques de mise sur le marché (drones armés) 
+   -- Règlementation de protection de l'environnement (recyclage batterie)
+
+   _*/Pour faute, il faut prouver que ce soit contre la loi et pour les robots il n'y a aucune loi/*_

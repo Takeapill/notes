@@ -1,0 +1,237 @@
+@document.meta
+title: brevet
+description: 
+authors: 
+categories: Droit
+created: 2023-12-17T13:33:31+0100
+updated: 2023-12-19T08:25:03+0100
+version: 1.1.1
+@end
+
+* Qu'est-ce qu'un brevet?
+  - Un brevet est un _*titre qui protège une invention*_ pendant
+    une durée maximale de 20 ans, en excluant tout tiers de
+    l'utilisation de l’invention à des fins industrielles. Il est
+    possible de vendre un brevet ou de l’exploiter sous licence.
+  - Les brevets d’invention sont délivrés pour les inventions
+    nouvelles utilisables industriellement. (art. 1 al. 1 LBI)
+
+* 3 Conditions de brevetabilité
+  - L'invention doit être _nouvelle_
+  - L'invention est _susceptible d'application industrielle_
+  - L'invention doit _relever d'une activité inventive_
+    /Elle ne doit pas être évidente pour un homme du métier/
+
+** Description des inventions mises en œuvre par ordinateur
+   - La demande de brevet doit décrire l’invention d’une façon qui permette à 
+     l’homme du métier de l’exécuter
+   - Les listes de programmes rédigées en langage de programmation ne peuvent 
+     servir seules de description de l’invention
+   - La description doit être faite en langage courant, éventuellement avec des 
+     organigrammes ou de courts extraits de programmes, de façon qu’un homme du 
+     métier disposant de connaissances générales en programmation puisse 
+     comprendre l’invention.
+
+* Inventions exclues de la protection
+  - idées abstraites sans étapes techniques concrètes,
+  - découvertes de processus ou de phénomènes naturels,
+  - théories scientifiques
+  - règles de jeu et les méthodes d'apprentissage.
+  - méthodes de diagnostic et les méthodes de traitement thérapeutique et chirurgical
+  - variétés végétales, les races animales et les procédés biologiques d’obtention de
+    végétaux ou d’animaux
+  - inventions dont les applications sont contraires à l’ordre public ou aux bonnes mœurs (ex.
+    procédés de clonage humain) ne sont pas brevetables.
+
+** Pour un logiciel
+   - *Droit d’auteur* => la manière dont le logiciel est exprimé = le code source
+   - *Brevet* => l’algorithme du logiciel
+
+*** Ne sont pas considérés comme des inventions au sens du par. 1 notamment:
+    ~~ les découvertes, les théories scientifiques et les méthodes mathématiques;
+    ~~ les créations esthétiques;
+    ~~ les plans, principes et méthodes dans l’exercice d’activités 
+       intellectuelles, en matière de jeu ou dans le domaine des activités 
+       économiques, ainsi que les programmes d’ordinateur;
+    ~~ les présentations d’informations.
+
+ *** Si à une *incidence* sur la technologie ==> brevet possible
+**** Avoir une incidence
+     - sur l’efficacité ou la sécurité d’un procédé
+     - sur la gestion des ressources informatiques nécessaires
+     - sur le débit de transfert des données dans une liaison de communication
+
+     Il est possible de breveter une invention qui est mise en œuvre par 
+     ordinateur si elle résout un problème technique de manière non évidente. 
+     Certaines caractéristiques de l’invention sont réalisées 
+     (totalement ou partiellement) par un logiciel. 
+
+* Exemples de brevets
+** Brevets européens délivrés
+   - Cryptage
+   - Anti-virus
+
+** Brevets européens non délivrés
+*** Affaire judiciaire «Classification de documents»
+    Savoir si des documents appartiennent à une même "classe" en
+    fonction de leur contenu ne constitue pas un caractère technique
+   - Même si un être humain ne pourrait appliquer la méthode (qui recourt à̀ un
+     algorithme), même si la méthode informatisée est plus efficace, et même
+     si l’algorithme permet d’obtenir des résultats reproductibles, cela ne suffit
+     pas à lui conférer un caractère technique
+   - Le recours à un ordinateur pour exécuter la méthode lui confère un
+     caractère technique, mais puisque l’algorithme ne contribue pas au
+     caractère technique de la méthode revendiquée, l’activité inventive ne
+     pourrait résider que dans son automatisation, laquelle est évidente
+*** Affaire judiciaire «Classification de mails comme spams»
+    Méthode de classification de messages électroniques recourant à un algorithme
+    (utilisant des probabilités) pour classer certains messages comme spams
+    - Pas de caractère technique, sauf dans son automatisation
+    - Automatisation évidente (pas d’activitée inventive dans la
+      programmation, évidente pour un programmeur)
+
+* Procédure de délivrance de brevet
+** En suisse
+**** priorité du dépôt
+     - Demande de brevet
+     - Examen par l’IPI
+     - Délivrance
+
+*** Contenu de la demande
+    - Description de l’invention: accompagnée de dessins (un homme de métier doit pouvoir l’exécuter)
+    - Revendications: procédé ou produit
+    - Paiement d’une taxe : prix variable selon la voie choisie et le nombre
+    de pays dans lesquels l’invention doit être protégée
+
+*** Examen de la demande
+**** IPI examine:
+     - invention: règle technique
+     - application industrielle
+     - exceptions à la brevetabilité
+**** IPI n’examine pas:
+     - nouveauté
+     - non-évidence
+** En europe => Convention de Münich
+   Dépôt européen à Munich auprès de l’OEB (Office européen des brevets)
+*** Examen complet: conditions de forme et conditions matérielles
+    - Examen des conditions de forme
+    - Publication des d’un rapport de recherche sur l’état de la technique
+    - Sur demande: Examen des conditions matérielles (nouveauté, non évidence…)
+
+*** Deux possibilités pour un brevet européen
+    - Brevet européen « _classique_ »: il a les mêmes effets qu’un
+      brevet national (soumis au droit des différents états)
+    - Brevet européen « _unitaire_ »: soumis à une juridiction européenne 
+
+*** Brevet unitaire depuis 2021
+**** Avant
+     - L’inventeur devait valider dans chaque pays où il souhaitait
+       bénéficier d'une protection.
+**** Système actuel
+     - coopération renforcée Suppression des formalités de validations nationales.
+     - L’inventeur n’a plus besoin de faire des démarches auprès des 17 offices nationaux pour
+       faire reconnaître votre brevet et le défendre.
+
+*** Nouveau tribunal: Juridiction unifiée du brevet
+    Mise en place d'une juridiction supranationale pour régler les
+    litiges entre inventeurs ou entreprises (JUB)
+    - *But:* harmoniser le droit des brevets dans l’Union européenne.
+    - *Rôle:* statuer sur le contentieux relatif à la contrefaçon et à la
+      validité des brevets au niveau européen
+    - *Compétence exclusive:* en ce qui concerne les brevets européens
+      « classiques » et les brevets européens à effet unitaire.
+      Dérogations possibles.
+
+** A l'internationale 
+   Procédure du PCT (Traité de coopération en matière de brevets)
+   - Dépôt de la demande auprès de l’IP ou de OEB
+   - Demande transmise auprès d’une administration internationale
+     pour recherche sur l’état de la technique
+   - Résultat du rapport transmis à IPI ou OEB
+   - Délivrance du brevet
+   - Publication dans la base de données « Pantentscope »
+   - Brevets délivrés sont soumis au droit des différents états
+
+* Appartenance
+  - Le droit à la délivrance appartient à l’inventeur (Art 3 al 1 LBI)
+
+** Statut des co-inventeurs
+**** Réglé par contrat
+     Application des règles de la société simple (Art 530 ss CO):
+     l’unanimité est indispensable pour disposer de l’invention
+**** Non réglé par contrat
+     Application des règles de la copropriété (Art 3 al 2 et 33 al 2 LBI):
+     chacun peut disposer de sa part de façon indépendante et intenter
+     une action en violation du brevet
+** Cas des employés
+*** Principe:
+    L’invention appartient à l’inventeur L'inventeur est toujours une personne
+    physique: Il a le droit d’être mentionné dans la demande de brevet
+*** Exception:
+    Un employé qui développe une invention dans le cadre du travail (Art 332 CO)
+***** L’invention appartient à l’employeur
+      Si le travailleur a créé l'invention dans l’exercice de son activité au
+      service de l’employeur et conformément à ses obligations contractuelles 
+      et que le contrat de travail ne stipule aucune clause contraire, 
+      l'invention appartient à l'employeur
+      - Si l’invention est réalisée dans l’exercice de son activité au
+        service de l’employeur mais en dehors de l’accomplissement de
+        ses obligations contractuelles, l’invention doit être signalée à
+        l’employeur si cela a été convenu par écrit. Ce dernier devra décider
+        s'il entend acquérir l'invention ou la laisser au travailleur (cas des
+        inventions fortuites).
+      - Les inventions « libres »: peuvent être acquises par l’employeur
+        uniquement par contrat de cession
+
+* Restrictions aux droits du titulaire du brevet
+  - Utilisations non professionnelles: recherche, enseignement … (Art 9 LBI)
+  - Usage antérieur de bonne foi: le brevet ne peut être opposé
+    à celui qui a de bonne foi utilisé l’invention avant le dépôt de
+    la demande ou qui a entrepris des préparatifs à ceMe fin. (Art 35 LBI)
+  - Action en octroi d’une licence pour défaut d’usage: dans
+    l’hypothèse où le titulaire du brevet n’a pas exploité l’invention dans une 
+    mesure suffisante en Suisse. (Art 37 LBI)
+  - Action en déchéance de brevet : Si l’octroi d’une licence ne
+    suffit pas pour satisfaire les besoins du marché suisse. (Art 38 LBI)
+  - Licence dans l’intérêt public : Lorsque l’intérêt public l’exige,
+    le juge peut accorder une licence lorsque le titulaire du
+    brevet a refusé d’en accorder une sans raison suffisante. (Art 40 LBI)
+  - Expropriation : Par la Confédération contre indemnité. (Art 62 LBI)
+
+* Transfert de brevet
+**** Cession (Art 33 LBI)
+     - Obligatoirement par écrit
+**** Licence (Art 34 LBI)
+     - Contrat par lequel le donneur de licence autorise le preneur de licence à
+       utiliser l’invention contre le versement de redevances
+     - Pas d’obligation de forme
+
+* Durée de la protection
+**** Principe:
+     - 20 ans dès le dépôt de la demande de brevet. (Art 14 LBI)
+     - Dès la 5ème année après le dépôt de la demande, la protection peut
+       être prolongée d’année en année par le paiement d’une taxe annuelle
+**** Exceptions :
+     - Défaut du paiement des annuités (Art 15 LBI)
+     - Nullité (art 26 LBI)
+
+* Actions en Justice
+**** Conditions: (Art 66 LBI)
+     - Utilisation illicite de l’invention
+     - Refus de renseigner sur la provenance du produit
+     - Enlèvement du signe du brevet ou numéro
+     - Complicité
+**** Actions civiles
+     - Action en cessation (Art 72 LBI)
+     - Action en dommages intérêts (Art 73 LBI et CO)
+     - Action en constatation de l’existence ou de l’inexistence d’un état de fait (Art 74 LBI)
+**** Actions pénales
+     - Existence d’un acte mentionné à l’Art 66 LBI. 
+     --- Peine : emprisonnement pour un an au plus ou amende jusqu’à 10’000 CHF (Art 81 LBI)
+     - Prétentions fallacieuses que les produits sont brevetés (Art 82 LBI) amende jusqu’à 2’000 CHF
+**** Mesures administra>ves
+     - Voir Art 86a ss LBI
+
+* Alternatives au brevet
+**** Secret d’affaires
+**** Publications défensives

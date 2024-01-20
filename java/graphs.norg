@@ -1,0 +1,104 @@
+@document.meta
+title: graphs
+description: 
+authors: kenan
+categories: java
+created: 2023-12-11T08:27:36+0000
+updated: 2023-12-11T10:30:55+0000
+version: 1.1.1
+@end
+
+* Graphs
+  - Similaire aux linked lists, mais chaque noeud peut pointer vers plusieurs autres noeuds
+  - Un graphe est un ensemble de noeuds et d'arêtes
+  - _Les valeurs doivent être uniques_
+
+** Arbres
+   - Contrairement aux graphes, les arbres sont orientés
+   - il y a un noeud racine et chaque noeud peut pointer vers plusieurs autres noeuds
+   - chaque noeud ne peut avoir qu'un seul parent
+   - Pour effectuer les méthodes depuis n'importe quel Noeud => _classe Noeud en public_
+
+** Arbre Binaire
+   - Chaque noeud peut pointer vers 2 autres noeuds
+   - Chaque noeud ne peut avoir qu'un seul parent
+
+** Arbre Binaire de Recherche
+   - Chaque noeud peut pointer vers 2 autres noeuds
+   - Chaque noeud ne peut avoir qu'un seul parent
+   - Les noeuds de gauche sont plus petits que le noeud parent
+   - Les noeuds de droite sont plus grands que le noeud parent
+   - _le nbr de tests pour trouver un noeud est la hauteur de l'arbre_
+   @code java
+   public class MonArbreBinaireDeRecherche {
+     private Noeud racine;
+
+     public MonArbreBinaireDeRecherche() {
+       racine = null;
+     }
+
+     private class Noeud {
+       int contenu;
+       Noeud filsG;
+       Noeud filsD;
+       public Noeud(int contenu) {
+         this.contenu = contenu;
+         filsD = null;
+         filsG = null;
+       }
+     }
+
+     public void insert(int valeur) {
+       racine = insert(valeur, racine);
+     }
+     private Noeud insert(int valeur, Noeud n) {
+       if (n == null) { return new Noeud(valeur); }
+       if (valeur < n.contenu) { n.filsG = insert(valeur, n.filsG);}
+       else                    { n.filsD = insert(valeur, n.filsD);}
+       return n;
+     }
+
+     public void parcourir() {
+       parcourir(racine);
+     }
+     private void parcourir(Noeud n) {
+       if (n == null) { return; }
+       // Methode prefixe
+       /*
+        System.out.print(n.contenu + ", ");
+        parcourir(n.filsG);
+        parcourir(n.filsD);
+         */
+       // Methode postfixe
+       /*
+        parcourir(n.filsG);
+        parcourir(n.filsD);
+        System.out.print(n.contenu + ", ");
+         */
+       // Methode infixe ==> tri croissant
+       parcourir(n.filsG);
+       System.out.print(n.contenu + ", ");
+       parcourir(n.filsD);
+     }
+
+     public boolean contains(int valeur) {
+       return contains(valeur, racine);
+     }
+     private boolean contains(int valeur, Noeud n) {
+       if (n == null) { return false; }
+       if (valeur == n.contenu) { return true; }
+       if (valeur < n.contenu) { return contains(valeur, n.filsG); }
+       else                    { return contains(valeur, n.filsD); }
+     }
+   }
+   @end
+
+** Graphs
+   - Les noeuds d'un graphs ne sont pas toujours lié à d'autres
+   - Il peut y'avoir un sens et d'autres informations dans les liens
+   - On crée donc une sous classe Relation => on les stockes dans:
+   --- ArrayList (moyen), HashMap (mieux), Matrice (plus efficace => accès direct)
+
+*** Méthode
+    - La collection peut être uniquement des bool si pas besoin d'autres info
+    - cependant pour les chemins il faut tout de meme faire une boucle recursive

@@ -1,0 +1,132 @@
+@document.meta
+title: contrats-info
+description: 
+authors: 
+categories: Droit
+created: 2023-12-16T16:10:01+0100
+updated: 2023-12-17T20:44:16+0100
+version: 1.1.1
+@end
+
+* Contrats "informatiques"
+** Qualification juridique du contrat informatique
+   - _*Objet commun:* fourniture de services liés à la technologie informatique en contrepartie d’un prix_
+   - _Grande variété de prestations: la même prestation peut être fournie par différents contrats_
+   - _Grande variété de contrats « informatiques »_
+   --- Mandat
+   --- Entreprise
+   --- Travail
+
+** Contrat de mandat
+   - Contrat de service
+   - Engagement d’un mandataire de rendre un service (de gérer une affaire) 
+     dans l’intérêt d’un mandant, en général contre une rémunération.
+   - Applicable par défaut (si ce n’est pas un autre contrat)
+     Prestataire est soumis à une obligation de moyen
+   - Respect de la diligence
+   - Assure une bonne et fidèle exécution du contrat (respect des règles de l’art)
+   - Très utilisé quand il y a une forte relation de confiance entre
+     le prestataire et son client
+
+   /Planification, conseil, gestion d’un projet informatique sur
+   une certaine durée/
+
+*** Résiliation du contrat
+    chaque partie peut résilier (mettre fin au contrat) en tout temps
+
+*** Résponsablité
+    - *Responsabilité _par_ défaut:*
+      Responsabilité du mandataire en cas de faute
+    - *Responsabilité _pour_ défaut:*
+      Responsabilité du vendeur pour tout défaut
+
+*** Délai de préscription ==> 10 ans
+
+
+** Contrat d’entreprise
+   - Contrat de service
+   - Obligation de résultat: engagement ferme du prestataire
+     d’atteindre un résultat déterminé
+*** Différences
+**** CONTRAT D’ENTREPRISE
+     - L’entrepreneur promet de rendre des services
+     - Obligation de résultat => Art 363 ss CO
+**** CONTRAT DE MANDAT
+     - Le mandataire promet de rendre des services
+     - Obligation de moyen
+     - Prépondérance du lien de confiance
+
+*** Résiliation du contrat
+    le maître d’ouvrage a le droit de résilier de manière anticipée
+    l’ensemble du contrat, lorsque l’entrepreneur est en demeure 
+    pour une partie des prestations
+
+*** Responsablité
+    - *Responsabilité _par_ défaut:*
+      Responsabilité de l’entrepreneur, même sans faute
+    - *Responsabilité _pour_ défaut:*
+    --- Responsabilité solidaire, illimitée et primaire des associés
+    --- Absence de garanties pour défaut
+
+*** Délai de préscription ==> 1 an (sauf pour défauts cachés)
+
+
+** Contrat de travail
+   - Contrat de prestation de service
+
+*** Différences
+**** CONTRAT DE TRAVAIL
+     - Une personne rend à une autre certains services
+     - Rapport de dépendance (subordination) entre l’employeur et le travailleur
+       /Travailleur est soumis aux instructions de l’employeur/ => Art 319 ss CO
+**** CONTRAT DE MANDAT
+     - Une personne rend à une autre certains services
+     - Pas de rapport de dépendance (subordination)
+    /Mandataire suit les instructions, mais agit indépendamment, sous sa
+    responsabilité/
+
+** Contrat de vente
+   - Echange de prestations
+   - Sur une courte durée, pas de récurrence
+   - Pour des solutions informatiques « standardisées »
+   /ex: livraison « clé en main » d’un logiciel ou d’un site internet/
+
+** Contrat de license
+   - Cession de l’usage d’un droit immatériel
+   - Contrat par lequel une personne donne à une autre le droit
+     d’utiliser un droit immatériel sur lequel elle a l’exclusivité,
+     contre le versement d’une rémunération.
+   /ex: cession de l’usage d’un logiciel appartenant au
+   prestataire contre le versement d’une redevance/
+
+** Société simple
+   - Consortium de prestataires, œuvrant de manière différente,
+     mais en vue de la réalisation d’un objectif commun pour le
+     compte d’un même client.
+
+     /Pas rééelement une société comme on l'entends pour une entreprise/
+   - *Présence de 3 éléments essentiels*
+   --- conclusion entre au moins 2 personnes
+   --- union des efforts ou des ressources
+   --- dans un but commun
+
+*** Art 530 al 1 CO
+    La société est un contrat par lequel deux ou plusieurs personnes
+    conviennent d’unir leurs efforts ou leurs ressources en vue d’atteindre
+    un but commun.
+
+** Impossibilité de fournir un produit informatique sans défaut
+   /Nécessité de conclure des accords de niveaux de service :/
+*** « Service Level Agreements » = SLA
+    - Elaboration de critères objectifs de performance
+    - Prise en considération d’une marge d’erreurs
+    - Prise en considération de l’absence de performance
+    - La responsabilité du prestataire ne dépend pas de sa faute.
+    - La faute = la « non atteinte » des indicateurs de performance
+    - Par conséquent, sanction financière automatique pour le prestataire
+    - Malus vs Bonus
+      
+** Signature du contrat
+   - Signature manuscrite
+   - Signature électronique
+   - E-ID

@@ -1,0 +1,48 @@
+@document.meta
+title: Strategy
+description: 
+authors: kenan
+categories: Java
+created: 2023-11-20T08:59:26+0000
+updated: 2023-11-20T08:59:39+0000
+version: 1.1.1
+@end
+
+* Quand?
+  - Plusieurs classes qui ne diffèrent que par leur comportement.
+  - Besoin de changer le comportement d'un objet à l'exécution.
+  - Besoin d'encapsuler un comportement spécifique à une classe.
+  - Besoin d'éviter de créer des hiérarchies de classes trop importantes.
+
+* Comment?
+  - Créez une interface qui représente le comportement.
+  - Puis créez des classes qui implémentent cette interface.
+  - Chaque sous-classe représente une stratégie
+  - Implementer la stratégie adaptée
+
+  ___
+* Exemple d'implementation
+  - Dans cette exemple, une interface PaiementStrategy est crée.
+  - Puis 3 sous-classe paiement pour twint, cash et carte;
+  - Enfin dans une classe consultant on implémente la stratégie adapté comme ci-dessous:
+
+  @code java
+  // Version 1 tous les consultants sont payés de la même façon
+  private static PaiementStrategy strategie;
+
+  public static void setStrategie(PaiementStrategy strategie) {
+    Consultant.strategie = strategie;
+  }
+
+  // Version 2 chaque consultant à sa propre strategie de paiement
+  private PaiementStrategy strategieConsultant;
+
+  public void setStrategieConsultant(PaiementStrategy strategie) {
+    Consultant.strategie = strategie;
+  }
+
+  // Version 3 on définit la stratégie à chaque paiement
+  public void payer(int montant, PaiementStrategy strategie) {
+    strategie.payer(montant);
+  }
+  @end

@@ -1,0 +1,43 @@
+@document.meta
+title: Factory
+description:
+authors: kenan
+categories: [
+  Java
+]
+created: 2023-11-17
+updated: 2023-11-20T08:58:32+0000
+version: 1.1.1
+@end
+
+* Factory
+  {https://refactoring.guru/design-patterns/factory-method}[Refactoring Guru]
+  - {https://refactoring.guru/images/patterns/diagrams/factory-method/structure-2x.png}[Schema]
+
+** Quand?
+   - Lorsque il y'a une seule classe principale contenant un attribut type (donc sous-classe).
+   - Pour remplacer un switch case ou if pour créer le bon type.
+   - L'objectif est de ne pas faire de distinction entre les sous-classe dans le code et de ne pas dupliquer le code.
+   - On utilise partout la classe mère chaque mandati sait quel type il est.
+   - Il est donc nécessaire de toujours travailler avec la classe mère.
+   - A la place, une méthode appelle directement la bonne sous-classe.
+   - Si il y a plusieurs Factory possible Methode 2.
+
+** Methode 1:
+   {/ ~\\code\\java\\ExoShipFactory}[Demo en solo 11.11]
+*** Comment?
+    - On crée une classe factory qui contient une méthode qui crée une instance de la bonne sous-classe.
+    - Cette classe Factory contient le switch/if.
+
+** Methode 2:
+   {/ ~\\code\\java\\ExoShipFactory2}[Demo en solo 13.11]
+*** Comment?
+    ~ On crée une classe abstraite ou une interface Factory. /Favoriser interface si aucune modification de l'instance nécessaire./
+    ~ Pour chaque nouvelle factory on crée une sous-classe Factory.
+    ~ Dans le main on choisit la bonne sous-classe Factory. 
+      Pour passer le type de factory à utiliser il y a 3 méthodes:
+    --- Soit dans l'application on crée un attribut statique.
+    --- Soit en paramètre de l'Application.
+    --- *Soit on crée un Singleton configuration qui choisit la factory de lui même.*
+    ~ L'application n'utilise qu'une seule fabrique
+

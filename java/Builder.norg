@@ -1,0 +1,52 @@
+@document.meta
+title: Builder
+description: 
+authors: kenan
+categories: Java
+created: 2023-11-17T14:16:37+0000
+updated: 2023-11-17T14:16:37+0000
+version: 1.1.1
+@end
+
+* Builder
+** {https://refactoring.guru/design-patterns/builder}[Refactoring Guru]
+   - {https://refactoring.guru/images/patterns/diagrams/builder/structure-2x.png?id=dca1b1508e23c266cbedc80ffb84311a}[Schema]
+    
+** Quand?
+   - Lorsque la création d'un objet est complexe et que l'on souhaite simplifier/décomposer le new.
+   - S'assurer d'avoir une instance correcte donc "complète"
+** Comment?
+   ~ Mettre le constructeur en private (/Le seul paramètre est le Builder/)
+   ~ Creer une une méthode static newBuilder pour appeler le Builder.
+   ~ Creer une classe Builder (/Elle doit contenir les mêmes attributs que la classe à construire et des setter pour chaque/)
+   ~ Chaque méthode pour ajouter un attribut retourne la classe Builder ce qui permets de chain les methodes.
+   ~ Créer une méthode build dans le Builder pour créer l'instance terminée.
+     /Pour ajouter de la réusabilité, il est possible d'implementer une interface builder/ 
+  
+   #tangle: Builder.java
+   @code java
+   // On considère que l'exemple ci-dessous est écrit dans la classe
+   // Le constructeur d'Instance prends comme seul parametre le builder et est private
+   public static Builder newBuilder() { return new Builder(); } // doit être statique pour être appelé
+   public static class Builder() {
+     // Mêmes attributs que la Classe Instance
+     private int num;
+     private String val;
+     // Créer des setter pour chaque
+     public Builder setNum(num) { this.num = num; return this; }
+     public void setVal(val) { this.val = val; return this; }
+     // Methode permettant la finalisation de la construction
+     public Instance build() {
+       // Vérifie que l'instance est complète et return l'instance crée
+       if (num > 0 && val != null) {
+         return new Instance();
+       } else {
+         // Throw une Erreur
+       }
+     }
+   }
+   // Pour l'utiliser:
+   Instance.Builder instanceEnConstruction = Instance.newBuilder(); // Builder de la classe Instance
+   instanceEnConstruction.setNum(1).setVal("hihi")
+   instanceEnConstruction.build(); // Initialise une nouvelle instance si les checks sont validés
+   @end

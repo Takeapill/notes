@@ -1,0 +1,16 @@
+@document.meta
+title: tunnel
+description: 
+authors: 
+categories: ccna
+created: 2023-12-22T11:20:04+0100
+updated: 2023-12-22T11:24:34+0100
+version: 1.1.1
+@end
+
+* Interface tunnel [num]
+  - ip address [new network ip] [mask]
+  - tunnel source 1.1.1.1
+  - tunnel destination 2.2.2.2
+
+  /ajouter le réseau dans rip et access-lists/

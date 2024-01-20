@@ -1,0 +1,18 @@
+@document.meta
+title: standby
+description: 
+authors: 
+categories: ccna
+created: 2023-12-22T10:55:19+0100
+updated: 2023-12-22T10:55:28+0100
+version: 1.1.1
+@end
+
+* Router principal
+** Interface [num]
+  - standby 1 ip 192.168.14.1
+  - standby 2 priority 100
+* Router secondaire
+** Interface [num]
+   - standby 1 ip 192.168.14.1
+   - standby 2 priority 90

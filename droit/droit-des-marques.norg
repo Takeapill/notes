@@ -1,0 +1,152 @@
+@document.meta
+title: droit-des-marques
+description: 
+authors: 
+categories: Droit
+created: 2023-12-17T10:29:51+0100
+updated: 2024-01-20T11:40:06+0100
+version: 1.1.1
+@end
+
+* Marques => signe propre et distinctif
+** Eléments composant une marque
+   - lettres: CFF, TCS
+   - mots: Victorinox, Starbuck’s
+   - chiffres: Levis 501, Nokia 5088
+   - représentations figuratives: logo des CFF, pomme d’Apple
+   - formes tridimensionnelles: Toblérone
+   - slogans: L'Oréal, « Parce que nous le valons bien »
+   - mélodie: musique Migros, Mc Donald’s
+
+** Types
+   - Marque tridimensionnelle => forme
+   - Marque de position => /ex. placement du logo sur une chaussure/
+   - Marque holograme => fichier image holographique ou vidéo sans son
+
+** Catégories de marque
+   - *Marques individuelles* => Un signe propre à une seule entreprise.
+     /Ex: Coca-cola, Mc Donald’s/
+   - *Marques collectives* => Un signe désignant les produits ou les services d’un
+     groupement d’entreprises.
+     /Ex: étoiles/croix des pharmacies/
+   - *Marques de garantie* => Un signe permettant de garantir que des produits ou
+     des services présentent des caractéristiques précises.
+     /Ex: Bio, AOC, ECO/
+   - *Marques de fabriques et et de commerce* => La plupart des marques 
+     appartiennent à des manufactures ou à des grands groupes de commerçants.
+     /Ex: Nestlé, Migros/
+   - *Marques de service* => La protection des marques utilisées par des
+     entreprises de service
+     /Ex: banques, éditeurs, opérateur de téléphonie/
+   - *Marques de haute renommée* => Les marques connues de tous (ou presque).
+     /Ex: Coca-cola, Mc Donald’s/
+
+** Motifs d’exclusion
+*** Motifs absolus => _ART. 2 LPM_
+    ~~ les signes appartenant au domaine public, sauf s’ils se sont imposés 
+       comme marques pour les produits ou les services concernés;
+    ~~ les formes qui constituent la nature même du produit et les formes du 
+       produit ou de l’emballage qui sont techniquement nécessaires;
+    ~~ les signes propres à induire en erreur;
+    ~~ les signes contraires à l’ordre public, aux bonnes mœurs ou au droit en vigueur.
+
+*** Sont exclus de la protection à titre de marque
+    - les signes banals => _rejoint point A_
+    - les désignations génériques
+    - les abréviations protégées
+    - les armoiries
+    - marques descriptive
+    - marques trompeuse
+    - marques contraire à l'ordre public
+
+** Raison de commerce et marques
+   /L'inscription d'une raison de commerce au Registre du commerce ne protège 
+   pas la raison de commerce en tant que marque./
+
+** Nom de domaine et marques
+   - détient le droit exclusif d’usage du signe dans le cadre du système de
+     noms de domaines
+   - terminaisons «.ch» (Suisse): enregistrées auprès du service
+     d’enregistrement de la fondation Switch
+   - domaines génériques «.biz, .com, .info, .name ou .net»: enregistrées auprès de
+     ’Internet Corporation for Assigned Names and Numbers (ICANN)
+   - ne possède aucun autre droit: il n’est ainsi pas habilité à utiliser
+     exclusivement le signe pour désigner des produits ou des services
+   - il est possible d'enregistrer le nom de domaine également en
+     tant que marque ou en tant que raison de commerce.
+
+** Droit exclusif du titulaire de la marque
+   - *Utiliser* la marque pour désigner ses marchandises ou services
+   - *Disposer* de la marque (cession, licences)
+   - *Interdire* à un tiers d’utiliser un signe identique ou similaire, s’il 
+     existe un risque de confusion entre les deux marques
+*** Transfert de droits
+**** Cession
+     - contrat de cession: forme écrite
+**** Licence
+     - Contrat de licence: aucune forme particulière
+
+** Protection nationale ou internationale
+**** Nationale
+**** Européene
+**** Internationale
+    
+*** Signes:
+    󰩧 => Registered
+    󰩸 => Trademark => /"nom de marque"/
+
+*** Protection en Suisse
+    Dépôt auprès de l’IPI
+    - => Acceptation: puis publication
+    - => Rejet, si
+    --- ==> Le dépôt ne satisfait pas aux conditions formelles.
+    --- ==> Les taxes prescrites n’ont pas été payées.
+    --- ==> Il existe des motifs absolus d’exclusion.
+
+    **** Procédures d’opposition (éventuellement)
+         - Conditions formelles :
+         --- Délai : 3 mois après la publication de l’enregistrement dans FOSC
+         --- Qualité pour agir : titulaire d’une marque antérieure
+         --- Forme : par écrit
+         - Conditions matérielles :
+         --- Usage de la marque opposante au moment de l’opposition
+         --- Motif : risque de confusion
+
+*** Protection à l'étranger
+    - Dépôt dans le pays concerné
+    - Dépôt EUIPO (Office de l’Union Européenne pour la Propriété Intellectuelle): 
+      obtention d’une protection dans toute l’UE
+    - Dépôt selon le système de Madrid (OMPI): protection dans plus de 125 pays
+
+**** Système de Madrid
+     - demande unique
+     - examen de forme de l’OMPI
+     - une seule série de taxe
+     - demande de protection dans un maximum de 128 pays
+     - gestion dans un seul système centralisé
+
+** Durée de la protection
+   - 10 ans à partir de la date du dépôt
+   - Prolongation sur demande de 10 ans en 10 ans et pour autant que les taxes 
+     prévues à cet effet par l’ordonnance soient payées.
+
+** Actions en justice
+*** Actions civiles
+    - Action en constatation (intérêt juridique!)
+    - Action en cession du droit à la marque (marque déposée sans droit par un tiers)
+    - Action en interdiction (violation imminente)
+    - Action en cessation (violation dure encore)
+    --- Demande de provenance des objets
+    --- Tort moral, Restitution du gain
+    --- Confiscation
+    --- Mesures provisionnelles
+*** Actions pénales
+    - Liste des actes réprimés : art. 61 à 63 LPM
+    - Poursuite : sur plainte
+    - Sanction (peine privative de liberté ou peine pécuniaire)
+
+*** Interventions administratives de l’administration des douanes
+    - Dénonciation d’envois suspects
+    - Demande d’intervention/d’immobilisation
+    - Rétention des produits
+    - Demande de destruction des produits

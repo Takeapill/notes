@@ -1,0 +1,121 @@
+@document.meta
+title: Droit Pénal
+description: 
+authors: 
+categories: Droit
+created: 2023-12-16T21:13:17+0100
+updated: 2024-01-20T12:27:39+0100
+version: 1.1.1
+@end
+
+* Cyber-risque
+  /Toute infraction pénale est un cyber-risque./
+  *Cyber-risques:* menaces potentielles pour les systèmes informatiques et les
+  réseaux, y compris les données stockées sur ces systèmes.
+  - *Risque:* probabilité qu’un événement indésirable se produise, entraînant
+    des conséquences négatives pour une personne, une entreprise ou une
+    société, comme la non atteinte d’un objectif, la réduction de la
+    performance ou encore la perte d’opportunité. 
+
+* Infractions informatiques
+  ** Infractions informatiques typiques
+     Dirigées contre un ordinateur ou des données informatiques
+     - soustraction de données
+     - accès indu à un système informatique
+     - détérioration de données
+     - utilisation frauduleuse d’un ordinateur
+** Infractions informatiques atypiques
+   Infractions existant indépendamment des technologies de l’information, 
+   mais qui peuvent être _*réalisées grâce à un ordinateur ou des données informatiques.*_
+   - atteinte à l’honneur
+   - pornographie
+   - incitation au terrorisme
+   - incitation à la haine raciale
+   - escroquerie
+   - violation de droits d’auteur 
+
+** Acteurs de la protection
+   - Exploitant d’un système informatique
+   - Organismes spécialisés fédéraux
+   --- Préposé́ fédéral à la protection des données et à la transparence (PFPDT)
+   --- Office fédéral pour la cybersécurité (ancien Centre national pour la cybersécurité NCSC)
+   - Organismes spécialisés cantonaux
+   --- Prévention Suisse de la Criminalité́ (PSC)
+   --- Brigade de criminalité informatique (BCI) à Genève
+
+** For juridique
+   *For juridique:* compétence territoriale du tribunal (Art 31 du Code
+   de procédure pénale suisse (CPP)
+   - for au lieu où l’acte a été́ commis ou
+   - for à l’endroit où le résultat s’est produit si le lieu de
+     commission n’est pas situé en Suisse
+
+** Infractions typiques
+*** Soustraction de données personnelles
+**** 5 conditions pour la soustraction de données
+     - Soustraction => de données protégées => dès que la donnéee est accessible
+     - Acte intentionnel
+     - Dessein d’enrichissement illégitime
+     - Donnée informatique => Pas de définition du CP, définition large de la JP
+     - Spécialement protégée => non accessible à tous
+       /Similaire pour données personnelle/
+**** Poursuites
+     - Infraction est poursuivie d’office (sauf pour les familles)
+     - 5 ans de prison au plus ou peine pécuniaire
+     - _/Pour les données personnelles:/_
+     --- Infraction est poursuivie sur plainte de la personne dont les
+         données personnelles sont atteintes
+     --- 3 ans de prison au plus ou peine pécuniaire
+
+*** Accès indu à un système informatique
+    *But de l’auteur:* être présent dans le système informatique
+    Comportement punissable: pénétrer un système informatique en
+    détournant les sécurités et les barrières informatiques prévues.
+
+    *Accès indu:* dès que les données du système informatique sont
+    «visibles» et utilisables par l’auteur.
+
+    _L’accès doit intervenir par le biais d’un dispositif de transmission de données_
+    - Notion large: système de communication avec ou sans fil
+    - Ex: réseau Internet
+
+**** 3 conditions pour « hacking »
+     - accès indu
+     - intentionnel
+     - à un système informatique appartenant à autrui et spécialement protègé
+     --- Système informatique appartenant à autrui
+     --- Système informatique spécialement protégé́
+     ----- Nécessité d’avoir une barrière informatique: 
+           /codage, chiffrement ou un code d’accès/
+     ----- Barrière physique insuffisante: ex: porte fermée à clé
+**** Poursuites
+     - Infraction est poursuivie sur plainte
+     - 3 ans de prison au plus ou peine pécuniaire
+
+     /Le phishing n'est du hacking que si les informations obtenues mènent à un hacking
+     sinon si la victime donne d'elle même les informations ==> escoquerie/
+
+*** Mise à disposition d’informations permettant l’accès indu à un système informatique
+    - /Ex: vendre un trojan/
+*** Détérioration de données
+    - /Ex: defacement, malware, ransomware, etc.../
+*** Mise à disposition d’informations permettant la détérioration de données
+    - /Ex: vendre un malware/ransomware/
+*** Utilisation frauduleuse d’un ordinateur
+*** Obtention frauduleuse d’une prestation
+    - /Ex: Imprimer des faux billets de spectacle/
+*** Usurpation d’identité
+
+** Instruments d'aide
+   *Norme ISO 27001 :* définit les exigences des systèmes de management de la 
+   sécurité de l’information.
+   *But:* instaurer la confiance pour clients et fournisseurs
+
+*** Exemples de mesures de sécurité
+   - Définir des politiques de sécurité de l’information,
+   - approuvées par la direction
+   - diffusées largement (employés, toutes les parties prenantes)
+   - Définir une politique en matière d’appareils mobiles
+   - Définir une politique en matière de télétravail
+   - Gérer les accès utilisateur
+   - /Ex: mesures appropriées en cas de fin de contrat (suppression des accès)/
